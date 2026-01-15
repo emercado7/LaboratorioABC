@@ -1,16 +1,14 @@
 .container {
     display: flex;
     gap: 20px;
-    background-color: rgb(158, 156, 156);
+    background-color: gray;
 }
 h3{
     color:green;
 }
-
 .row {
     flex: 1;
 }
-
 .img-thumbnail {
     width: 200px;
     height: 200px;
