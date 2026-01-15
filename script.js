@@ -1,15 +1,11 @@
+const colors = ["red", "blue", "green"]
 
-const colores = ["green", "blue", "red"];
-
-function colorAleatorio() {
-    const indice = Math.floor(Math.random() * colores.length);
-    return colores[indice];
+function changeColor() {
+    document.getElementById("colorChanger").style.color = colors[getRandomInt(0, 3)];
 }
 
-const elementosH5 = document.querySelectorAll("h5");
-
-elementosH5.forEach(function(h5) {
-    h5.addEventListener("click", function() {
-        h5.style.color = colorAleatorio();
-    });
-});
+function getRandomInt(min, max) {
+  const minCeiled = Math.ceil(min);
+  const maxFloored = Math.floor(max);
+  return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled);
+}

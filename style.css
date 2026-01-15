@@ -15,3 +15,12 @@ h3{
     height: 200px;
     object-fit: cover;
 }
+
+/*  * Clase para cambiar de color a blue a tres h3 */
+.blue3{
+    color: blue
+}
+/*    * id para cambiar de color a red a un h3 */
+#red1{
+    color: red
+}
